@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace XSystem.Collections
+﻿namespace XSystem.Collections
 {
     /// <summary>
     ///     This class stores extension method on IEnumerable.

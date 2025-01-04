@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace XSystem.Collections
+﻿namespace XSystem.Collections
 {
     /// <summary>
     ///     This class implement a Dictionary that can reference several value for a unique key.

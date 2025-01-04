@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-
-namespace XSystem.Collections
+﻿namespace XSystem.Collections
 {
     /// <summary>
     ///     This class implements a dictionary that contains weak reference to the values.

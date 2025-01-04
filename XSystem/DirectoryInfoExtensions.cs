@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-
-namespace XSystem
+﻿namespace XSystem
 {
     /// <summary>
     ///     This class stores extension methods on DirectoryInfo.

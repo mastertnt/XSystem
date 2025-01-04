@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace XSystem
+﻿namespace XSystem
 {
     /// <summary>
     ///     This class stores extension methods on AppDomain.
