@@ -15,14 +15,27 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    # Restore the code.
     - uses: actions/checkout@v4
+
+    # Setup dotnet
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+
+    # Restore dependencies
     - name: Restore dependencies
       run: dotnet restore
+
+    # Built it.
     - name: Build
       run: dotnet build --no-restore
+
+    # Test it
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+    #P Publish it on nuget.
+    - name: Publish to NuGet
+      run: dotnet nuget push '**/bin/Release/*.nupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json 
